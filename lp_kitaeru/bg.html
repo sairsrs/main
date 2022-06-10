@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字と画像を重ねる</title>
+    <style>
+		.mainV{
+			width:1400px;
+			height:580px;
+			background:url("images/main_5.jpg");
+			position: relative;
+		}		
+		.mainV::before{
+			content: "";
+			position: absolute;
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			background:rgba(0,0,0,0.7);
+		}
+		.mainT{
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			font-size:8rem;
+			/*フォントサイズ８倍*/
+			color:#fff;
+		}
+		
+		.txtGrow{
+			text-shadou:0 0 15px #000,
+									0 0 15px #000,
+									0 0 15px #000,
+									0 0 15px #000,
+									0 0 15px #000;
+		}
+		
+		
+    </style>
+</head>
+<body>
+    <head></head>
+    <main>
+        <section>
+            <div class="mainV">
+                <div class="mainT txt Grow">poripori</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
