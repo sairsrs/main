@@ -1,0 +1,11 @@
+.card-body{
+    background-color: sienna;
+}
+.btn-big{
+    padding:20px 40px;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+}
+.card-img-overlay{
+    background: rgba(0,0,0,0.5)
+}
